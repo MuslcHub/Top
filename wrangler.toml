@@ -10,5 +10,5 @@ run_worker_first = true
 [[d1_databases]]
 binding = "DB"
 database_name = "shared-notes-db"
-database_id = "PASTE_YOUR_DATABASE_ID_HERE"
+database_id = "b4c5ccb0-3d23-4d9a-a3e0-d13a3f7a834a"
 migrations_dir = "migrations"
