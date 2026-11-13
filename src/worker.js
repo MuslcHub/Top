@@ -582,7 +582,7 @@ async function api(request, env, url) {
 
     if (
       !/^[a-f0-9]{64}$/.test(token || "") ||
-      !(await sha256(token)).startsWith(note.invite_hash || "INVALID")
+      !equalHex(await sha256(token), note.invite_hash)
     ) {
       return error("Ссылка-приглашение недействительна.", 403);
     }
