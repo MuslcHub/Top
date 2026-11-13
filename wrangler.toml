@@ -1,0 +1,14 @@
+name = "shared-notes"
+main = "src/worker.js"
+compatibility_date = "2026-11-13"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+run_worker_first = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "shared-notes-db"
+database_id = "PASTE_YOUR_DATABASE_ID_HERE"
+migrations_dir = "migrations"
